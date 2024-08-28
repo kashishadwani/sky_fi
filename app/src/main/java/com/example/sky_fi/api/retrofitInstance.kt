@@ -13,5 +13,5 @@ object retrofitInstance {
         build()
     }
 
-    val weatherApi : weatherApi = getInstance().create(weatherApi::class.java)
+    val weatherApi : weatherApi by lazy { getInstance().create(weatherApi::class.java)}
 }
