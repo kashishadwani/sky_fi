@@ -9,7 +9,8 @@ object retrofitInstance {
 
     private fun getInstance(): Retrofit{
         return Retrofit.Builder().
-        baseUrl(baseUrl).addConverterFactory(GsonConverterFactory.create()).
+        baseUrl(baseUrl).
+        addConverterFactory(GsonConverterFactory.create()).
         build()
     }
 
